@@ -1,0 +1,9 @@
+Origin: Dusk
+Label: Dusk
+Suite: stonking
+Codename: stonking
+Version: 26.10
+Architectures: amd64 all
+Components: main
+Description: Dusk packages for DuskOS
+# SignWith is set by scripts/set-key.sh

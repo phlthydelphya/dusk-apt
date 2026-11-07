@@ -1,0 +1,5 @@
+Types: deb
+URIs: https://phlthydelphya.github.io/dusk-apt/
+Suites: stonking
+Components: main
+Signed-By: /usr/share/keyrings/dusk-archive-keyring.gpg
