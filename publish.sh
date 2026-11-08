@@ -57,6 +57,18 @@ install -m 0644 "$here/keyring/dusk-archive-keyring.gpg" "$here/public/dusk-arch
 install -m 0644 "$here/keyring/dusk-archive-keyring.asc" "$here/public/dusk-archive-keyring.asc"
 : >"$here/public/.nojekyll"
 
+# Landing page: the template with this suite's package list
+fpr=$(gpg --show-keys --with-colons "$here/keyring/dusk-archive-keyring.gpg" | awk -F: '$1 == "fpr" { print $10; exit }')
+# shellcheck disable=SC2016  # reprepro's own ${package}/${version} format
+rows=$(reprepro -b "$here" --list-format '<tr><td>${package}</td><td>${version}</td></tr>\n' list "$codename" | sort -u)
+SUITE=$codename FPR=$fpr ROWS=$rows DATE=$(date -u +%Y-%m-%d) python3 -I -c '
+import os, sys
+page = open(sys.argv[1]).read()
+for key in ("SUITE", "FPR", "ROWS", "DATE"):
+    page = page.replace("@" + key + "@", os.environ[key])
+open(sys.argv[2], "w").write(page)
+' "$here/site/index.html" "$here/public/index.html"
+
 # One parentless commit per publish, so old debs never pile up in history
 git -C "$here/public" add -A
 tree=$(git -C "$here/public" write-tree)

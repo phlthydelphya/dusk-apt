@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dusk APT repository</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f6f6f8; --fg: #1c1d22; --dim: #5d5f69; --card: #ffffff; --line: #dcdde3; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141519; --fg: #e4e5ea; --dim: #9a9cab; --card: #1c1d23; --line: #2c2e36; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  p.lead { color: var(--dim); margin: 0 0 24px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+  pre { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; overflow-x: auto; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  tr:last-child td { border-bottom: none; }
+  th { color: var(--dim); font-weight: 600; }
+  a { color: inherit; }
+  code { font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+<h1>Dusk APT repository</h1>
+<p class="lead">Signed packages for DuskOS: the Dusk desktop, Security Hub and shdefender. Suite <code>@SUITE@</code>, component <code>main</code>, amd64.</p>
+
+<h2>Add the repository</h2>
+<pre>sudo curl -fsSLo /usr/share/keyrings/dusk-archive-keyring.gpg \
+    https://phlthydelphya.github.io/dusk-apt/dusk-archive-keyring.gpg
+sudo curl -fsSLo /etc/apt/sources.list.d/dusk.sources \
+    https://raw.githubusercontent.com/phlthydelphya/dusk-apt/main/keyring/dusk.sources
+sudo apt update
+sudo apt install dusk-archive-keyring</pre>
+<p>The key is trusted for this repository only (<code>Signed-By</code>). Fingerprint: <code>@FPR@</code></p>
+
+<h2>Packages</h2>
+<table>
+<thead><tr><th>Package</th><th>Version</th></tr></thead>
+<tbody>
+@ROWS@
+</tbody>
+</table>
+
+<p><a href="https://github.com/phlthydelphya/dusk-apt">Source on GitHub</a> · updated @DATE@</p>
+</main>
+</body>
+</html>

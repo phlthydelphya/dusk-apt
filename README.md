@@ -8,6 +8,8 @@ Pages at https://phlthydelphya.github.io/dusk-apt/.
   `dusk-archive-keyring` deb. It then exports a signed tree into `public/`.
 - `public/` is a worktree of the `gh-pages` branch. Each publish replaces it with
   one parentless commit, so old debs never pile up in history.
+- `site/index.html` is the landing page template; `publish.sh` fills in the suite,
+  the key fingerprint and the package list.
 - `db/` is reprepro's state. It is not in git, so back it up.
 - `keyring/` builds `dusk-archive-keyring`. The package installs the public key in
   `/usr/share/keyrings/` and `/etc/apt/sources.list.d/dusk.sources` with
