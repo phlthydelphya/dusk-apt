@@ -2,8 +2,9 @@
 # Add the newest Dusktop debs and the keyring deb to the repo, export a
 # signed tree into public/ and commit it as the single gh-pages commit.
 # Pushing is a separate, manual step: git -C public push -f origin gh-pages
-# Usage: publish.sh [--dist DIR]
-#   --dist DIR   directory of Dusktop debs (default ~/dusk-theme/packaging/dist)
+# Usage: publish.sh [--dist DIR] [--suite CODENAME]
+#   --dist DIR         directory of Dusktop debs (default ~/dusk-theme/packaging/dist)
+#   --suite CODENAME   distribution to publish into (default stonking)
 set -euo pipefail
 
 here=$(cd "$(dirname "$0")" && pwd)
@@ -12,7 +13,8 @@ codename=stonking
 while (($#)); do
 	case $1 in
 		--dist) dist=$2; shift 2 ;;
-		-h|--help) sed -n '2,7p' "$0"; exit 0 ;;
+		--suite) codename=$2; shift 2 ;;
+		-h|--help) sed -n '2,8p' "$0"; exit 0 ;;
 		*) echo "unknown option: $1" >&2; exit 2 ;;
 	esac
 done
@@ -28,7 +30,7 @@ fi
 
 mapfile -t debs < <("$here/scripts/latest-debs.sh" "$dist")
 ((${#debs[@]})) || { echo "no debs in $dist" >&2; exit 1; }
-debs+=("$(bash "$here/keyring/build.sh")")
+debs+=("$(bash "$here/keyring/build.sh" "$codename")")
 
 for deb in "${debs[@]}"; do
 	# An already published version is skipped, a newer one replaces it
