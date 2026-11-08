@@ -37,7 +37,16 @@ mapfile -t debs < <("$here/scripts/latest-debs.sh" "$dist")
 debs+=("${extra[@]}" "$(bash "$here/keyring/build.sh" "$codename")")
 
 for deb in "${debs[@]}"; do
-	# An already published version is skipped, a newer one replaces it
+	# An already published version is skipped, a newer one replaces it.
+	# Skip it before reprepro sees it: a rebuild of the same version with
+	# other bytes (an older non-reproducible keyring deb) is an error there.
+	pkg=$(dpkg-deb -f "$deb" Package)
+	ver=$(dpkg-deb -f "$deb" Version)
+	# shellcheck disable=SC2016  # reprepro's own ${version} format
+	if [[ $(reprepro -b "$here" --list-format '${version}' list "$codename" "$pkg") == "$ver" ]]; then
+		echo "already published: $pkg $ver"
+		continue
+	fi
 	reprepro -b "$here" includedeb "$codename" "$deb"
 done
 reprepro -b "$here" deleteunreferenced

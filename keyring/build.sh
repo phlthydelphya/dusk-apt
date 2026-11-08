@@ -45,5 +45,8 @@ CONTROL
 mkdir -p "$here/out"
 deb=$here/out/${pkg}_${version}_all.deb
 rm -f "$deb"
-dpkg-deb --root-owner-group -Zxz --build "$root" "$deb" >/dev/null
+# Reproducible: the same VERSION always gives the same bytes
+epoch=$(date -u -d "$(tr . - <"$here/VERSION")" +%s)
+find "$root" -exec touch -h -d "@$epoch" {} +
+SOURCE_DATE_EPOCH=$epoch dpkg-deb --root-owner-group -Zxz --build "$root" "$deb" >/dev/null
 echo "$deb"
