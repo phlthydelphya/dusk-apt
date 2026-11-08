@@ -2,19 +2,23 @@
 # Add the newest Dusktop debs and the keyring deb to the repo, export a
 # signed tree into public/ and commit it as the single gh-pages commit.
 # Pushing is a separate, manual step: git -C public push -f origin gh-pages
-# Usage: publish.sh [--dist DIR] [--suite CODENAME]
+# Usage: publish.sh [--dist DIR] [--deb FILE]... [--suite CODENAME]
 #   --dist DIR         directory of Dusktop debs (default ~/dusk-theme/packaging/dist)
+#   --deb FILE         one more deb built outside dusk-theme (e.g. shdefender,
+#                      libyara-x-capi1, security-hub); repeatable
 #   --suite CODENAME   distribution to publish into (default stonking)
 set -euo pipefail
 
 here=$(cd "$(dirname "$0")" && pwd)
 dist=$HOME/dusk-theme/packaging/dist
 codename=stonking
+extra=()
 while (($#)); do
 	case $1 in
 		--dist) dist=$2; shift 2 ;;
+		--deb) [[ -f $2 ]] || { echo "no such deb: $2" >&2; exit 1; }; extra+=("$(realpath "$2")"); shift 2 ;;
 		--suite) codename=$2; shift 2 ;;
-		-h|--help) sed -n '2,8p' "$0"; exit 0 ;;
+		-h|--help) sed -n '2,10p' "$0"; exit 0 ;;
 		*) echo "unknown option: $1" >&2; exit 2 ;;
 	esac
 done
@@ -30,7 +34,7 @@ fi
 
 mapfile -t debs < <("$here/scripts/latest-debs.sh" "$dist")
 ((${#debs[@]})) || { echo "no debs in $dist" >&2; exit 1; }
-debs+=("$(bash "$here/keyring/build.sh" "$codename")")
+debs+=("${extra[@]}" "$(bash "$here/keyring/build.sh" "$codename")")
 
 for deb in "${debs[@]}"; do
 	# An already published version is skipped, a newer one replaces it
