@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dusk APT repository</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f6f6f8; --fg: #1c1d22; --dim: #5d5f69; --card: #ffffff; --line: #dcdde3; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141519; --fg: #e4e5ea; --dim: #9a9cab; --card: #1c1d23; --line: #2c2e36; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  p.lead { color: var(--dim); margin: 0 0 24px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+  pre { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; overflow-x: auto; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  tr:last-child td { border-bottom: none; }
+  th { color: var(--dim); font-weight: 600; }
+  a { color: inherit; }
+  code { font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+<h1>Dusk APT repository</h1>
+<p class="lead">Signed packages for DuskOS: the Dusk desktop, Security Hub and shdefender. Suites <code>stonking, resolute</code>, component <code>main</code>, amd64.</p>
+
+<h2>Add the repository</h2>
+<pre>sudo curl -fsSLo /usr/share/keyrings/dusk-archive-keyring.gpg \
+    https://phlthydelphya.github.io/dusk-apt/dusk-archive-keyring.gpg
+sudo curl -fsSLo /etc/apt/sources.list.d/dusk.sources \
+    https://raw.githubusercontent.com/phlthydelphya/dusk-apt/main/keyring/dusk.sources
+sudo sed -i "s/^Suites: .*/Suites: $(. /etc/os-release; echo "$VERSION_CODENAME")/" /etc/apt/sources.list.d/dusk.sources
+sudo apt update
+sudo apt install dusk-archive-keyring</pre>
+<p>The key is trusted for this repository only (<code>Signed-By</code>). Fingerprint: <code>5ABBE02B2511357B7F9A944BCB6A2678DF568386</code></p>
+
+<h2>Packages</h2>
+<table>
+<thead><tr><th>Package</th><th>Version</th><th>Suite</th></tr></thead>
+<tbody>
+<tr><td>dusk-about</td><td>1.0+dusk20261105195729</td><td>stonking</td></tr>
+<tr><td>dusk-apphub</td><td>0.1.0+dusk20261107041927</td><td>stonking</td></tr>
+<tr><td>dusk-archive-keyring</td><td>2026.11.07+26.10</td><td>stonking</td></tr>
+<tr><td>dusk-cast</td><td>1.0+dusk20261106054913</td><td>stonking</td></tr>
+<tr><td>dusk-cursors</td><td>1.0+dusk20261108060922</td><td>stonking</td></tr>
+<tr><td>dusk-defaults</td><td>1.0+dusk20261108014545</td><td>stonking</td></tr>
+<tr><td>dusk-extensions</td><td>1.0+dusk20261107113316</td><td>stonking</td></tr>
+<tr><td>dusk-fonts</td><td>1.0.1+dusk20261107120628</td><td>stonking</td></tr>
+<tr><td>dusk-gdm</td><td>1.0+dusk20261108014545</td><td>stonking</td></tr>
+<tr><td>dusk-gradia</td><td>1.13.0+dusk20261103111652</td><td>stonking</td></tr>
+<tr><td>dusk-loupe</td><td>50.0+dusk20261107063323</td><td>stonking</td></tr>
+<tr><td>dusk-mailhub</td><td>51.0+dusk20261105230110</td><td>stonking</td></tr>
+<tr><td>dusk-plymouth</td><td>1.0+dusk20261107063323</td><td>stonking</td></tr>
+<tr><td>dusk-qt-decoration</td><td>1.0+dusk20261104121755</td><td>stonking</td></tr>
+<tr><td>dusk-session</td><td>1.0+dusk20261107113316</td><td>stonking</td></tr>
+<tr><td>dusk-shell</td><td>1.0+dusk20261108121813</td><td>stonking</td></tr>
+<tr><td>dusk-showtime</td><td>50.0+dusk20261104030620</td><td>stonking</td></tr>
+<tr><td>dusk-strata</td><td>0.4.1+dusk20261108014545</td><td>stonking</td></tr>
+<tr><td>dusk-theme</td><td>1.0+dusk20261108123616</td><td>stonking</td></tr>
+<tr><td>dusk-theme-unifier</td><td>0.1.13+dusk20261105195036</td><td>stonking</td></tr>
+<tr><td>libyara-x-capi1</td><td>1.22.0-0shd1</td><td>stonking</td></tr>
+<tr><td>security-hub</td><td>0.5.6</td><td>stonking</td></tr>
+<tr><td>security-hub-firewall-mechanism</td><td>0.5.6</td><td>stonking</td></tr>
+<tr><td>shdefender</td><td>0.1.2</td><td>stonking</td></tr>
+<tr><td>dusk-about</td><td>1.0+dusk20261106005729~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-apphub</td><td>0.1.0+dusk20261107091927~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-archive-keyring</td><td>2026.11.07+26.04</td><td>resolute</td></tr>
+<tr><td>dusk-cast</td><td>1.0+dusk20261108203427~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-cursors</td><td>1.0+dusk20261108110922~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-defaults</td><td>1.0+dusk20261109061819~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-extensions</td><td>1.0+dusk20261108203427~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-fonts</td><td>1.0.1+dusk20261107170628~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-gdm</td><td>1.0+dusk20261109061801~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-gradia</td><td>1.13.0+dusk20261108203427~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-loupe</td><td>50.0+dusk20261107113323~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-mailhub</td><td>51.0+dusk20261106040110~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-plymouth</td><td>1.0+dusk20261107113323~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-qt-decoration</td><td>1.0+dusk20261108203427~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-session</td><td>1.0+dusk20261109061819~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-shell</td><td>1.0+dusk20261109061801~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-showtime</td><td>50.0+dusk20261104080620~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-staq</td><td>2.6.0+dusk20261109094625~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-strata</td><td>0.4.1+dusk20261108064545~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-theme</td><td>1.0+dusk20261109065728~26.04</td><td>resolute</td></tr>
+<tr><td>dusk-theme-unifier</td><td>0.1.13+dusk20261108005241~26.04</td><td>resolute</td></tr>
+<tr><td>libyara-x-capi1</td><td>1.22.0-0shd1</td><td>resolute</td></tr>
+<tr><td>security-hub</td><td>0.5.7</td><td>resolute</td></tr>
+<tr><td>security-hub-firewall-mechanism</td><td>0.5.7</td><td>resolute</td></tr>
+<tr><td>shdefender</td><td>0.1.2</td><td>resolute</td></tr>
+
+</tbody>
+</table>
+
+<p><a href="https://github.com/phlthydelphya/dusk-apt">Source on GitHub</a> · updated 2026-11-09</p>
+</main>
+</body>
+</html>

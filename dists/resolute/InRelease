@@ -1,0 +1,31 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Dusk
+Label: Dusk
+Suite: resolute
+Codename: resolute
+Version: 26.04
+Date: Mon, 09 Nov 2026 16:05:26 UTC
+Architectures: amd64
+Components: main
+Description: Dusk packages for DuskOS
+MD5Sum:
+ 1a09ff8f2635b33589937e918112f386 30115 main/binary-amd64/Packages
+ 2dc4e35e3cac3764b5704c953c14b4d9 10421 main/binary-amd64/Packages.gz
+ 70674e7cc45cfa503730e1faac38c6ba 132 main/binary-amd64/Release
+SHA1:
+ 2d725611bac6c46783a8774a514c75fa24b163ef 30115 main/binary-amd64/Packages
+ 6a158a1fd9cb83020a0d2c8c96abca11e72939bf 10421 main/binary-amd64/Packages.gz
+ 214884a4ca0551fc24a93afe2cf1bdd6cbe726b7 132 main/binary-amd64/Release
+SHA256:
+ 5fe6b7062468c1668f14820fa9b16de27eef21f53f6d304d9bb6965bb794d26a 30115 main/binary-amd64/Packages
+ dd51ab68d301de21609745e82bc12363f91e2b47b6e7f8d51118434dd8a799f7 10421 main/binary-amd64/Packages.gz
+ a6b73faffba53c931b84d2e6ad06381b11852e3621e27c9555575462eaa29458 132 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRau+ArJRE1e3+alEvLaiZ431aDhgUCavHvRgAKCRDLaiZ431aD
+hoYdAQDVg0XvHlz0jg9Bty7OhMlKPlSE2NQo3LlDLbHOudN8xgEA6IChFNAi2qHX
+mG+8SK26m/d5nEkp9guk0smz1EV6UAE=
+=Z/uT
+-----END PGP SIGNATURE-----

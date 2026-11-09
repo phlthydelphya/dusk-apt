@@ -1,0 +1,31 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Dusk
+Label: Dusk
+Suite: stonking
+Codename: stonking
+Version: 26.10
+Date: Sun, 08 Nov 2026 18:27:41 UTC
+Architectures: amd64
+Components: main
+Description: Dusk packages for DuskOS
+MD5Sum:
+ 111b76c2bcf52afb96efa80a1e08604c 28123 main/binary-amd64/Packages
+ 9ad17197cfd457c8227df26366496cc6 9956 main/binary-amd64/Packages.gz
+ c88767510f62c085273d80fb950a3481 132 main/binary-amd64/Release
+SHA1:
+ 95c143576c9916c0235e21710785aaa21a54cc03 28123 main/binary-amd64/Packages
+ 672b720f3adf25cc39feb2601da3ebcf046e54c0 9956 main/binary-amd64/Packages.gz
+ e1f915c2bb53fcc316f00599b5874bd7b47c9187 132 main/binary-amd64/Release
+SHA256:
+ 4490ed5f61f84c4d0fbb196c890d6130b15b8e08c4e3f3766e693ac64f3d408c 28123 main/binary-amd64/Packages
+ 859508b4c74d5ac6dcfe8f770edcabd2549ecf2ef5b3d35e614bc74b4d84e1f1 9956 main/binary-amd64/Packages.gz
+ 280cd35ea0723c41f2f5badc367cbe895f80e05df34abe3d7a568a3a8fad6ed3 132 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRau+ArJRE1e3+alEvLaiZ431aDhgUCavC/HQAKCRDLaiZ431aD
+hrQaAP97M3d1lBC6u9smtyvXxdf2+4yPxrWE966w5PjfVPpN7wEAghPE+kNtS/pD
+gIG7K/7S1e9bC48bud/AGUy85xQSYgY=
+=Y2XC
+-----END PGP SIGNATURE-----

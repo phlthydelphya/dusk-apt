@@ -1,0 +1,7 @@
+Archive: stonking
+Version: 26.10
+Component: main
+Origin: Dusk
+Label: Dusk
+Architecture: amd64
+Description: Dusk packages for DuskOS
