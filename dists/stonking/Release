@@ -1,0 +1,21 @@
+Origin: Dusk
+Label: Dusk
+Suite: stonking
+Codename: stonking
+Version: 26.10
+Date: Wed, 18 Nov 2026 02:02:31 UTC
+Architectures: amd64
+Components: main
+Description: Dusk packages for DuskOS
+MD5Sum:
+ 0583d8814d8ad43b7687a4d579db0ab5 29319 main/binary-amd64/Packages
+ f1f0910027988485712c55760ed0315c 10367 main/binary-amd64/Packages.gz
+ c88767510f62c085273d80fb950a3481 132 main/binary-amd64/Release
+SHA1:
+ af144ce272d77ea27b7dfc9b4a32edd2fbfce11a 29319 main/binary-amd64/Packages
+ e32049114c29660d3cbc208657d035cc1766db63 10367 main/binary-amd64/Packages.gz
+ e1f915c2bb53fcc316f00599b5874bd7b47c9187 132 main/binary-amd64/Release
+SHA256:
+ d075c2b638672f786cbd80b9c8f706e689051be67de5d2d1050515bcc200e299 29319 main/binary-amd64/Packages
+ d4532db05c0666aa049bbb4503ca8e4510f85bba271848c0c28a9df1788b32d2 10367 main/binary-amd64/Packages.gz
+ 280cd35ea0723c41f2f5badc367cbe895f80e05df34abe3d7a568a3a8fad6ed3 132 main/binary-amd64/Release

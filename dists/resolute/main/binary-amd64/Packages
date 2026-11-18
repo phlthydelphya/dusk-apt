@@ -1,0 +1,571 @@
+Package: dusk-about
+Version: 1.0+dusk20261106005729~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 84
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1
+Recommends: hwdata, pciutils
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-about/dusk-about_1.0+dusk20261106005729~26.04_all.deb
+Size: 7848
+SHA256: 4ad2e94f08cd4b818e914941b9c1dcd6bab2fcedd3a4826ea485efb02bcd48fc
+SHA1: 67e1c9c41945d231bbcc8cee9afc79da9f93d9ab
+MD5sum: 618d66abc5b460798a8b71750a2c66ec
+Description: About Dusk: this computer and the Dusk desktop
+ About Dusk is the Dusk desktop's About window: the device in its icon-theme
+ picture with its name, the Dusk version and the base it runs on, and the
+ processor, graphics, memory, storage, kernel and desktop. The logo menu's
+ About My System opens it. A fork of cupertino-aboutpane by Art Fazil.
+
+Package: dusk-apphub
+Version: 0.1.0+dusk20261107091927~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 1076
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-glib-2.0, gir1.2-packagekitglib-1.0, gir1.2-appstream-1.0, pkexec, gpg, dusk-theme
+Recommends: packagekit, flatpak, gir1.2-flatpak-1.0, snapd, gir1.2-snapd-2, squashfs-tools, timeshift, python3-apt, fwupd
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-apphub/dusk-apphub_0.1.0+dusk20261107091927~26.04_all.deb
+Size: 154068
+SHA256: 5b7a97cb87c2d8ad5ead12121f774ada9f3e118a948968f79eb910e20efd61e9
+SHA1: a18e1b9e78c1f823b33c720bcb6d0c8ff748c835
+MD5sum: 6f2585299fc4b7d1ab42076f789c0c81
+Description: Dusk's software center (AppHub)
+ AppHub is Dusk's software center: one place to find, install, update and
+ remove apps from APT (through PackageKit), Flatpak, Snap and AppImage, with
+ Flatpak preferred and the others one click away, and to manage APT sources
+ through a polkit-guarded helper. Its colours follow the Dusk theme. Firmware
+ updates come from the LVFS through fwupd. A background service started at
+ login checks for updates, notifies about them and shows them in the top bar;
+ AppHub also answers GNOME Shell searches. It takes the place of GNOME
+ Software and update-notifier in the Dusk session; other sessions keep them.
+
+Package: dusk-archive-keyring
+Version: 2026.11.07+26.04
+Architecture: all
+Multi-Arch: foreign
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Priority: optional
+Section: misc
+Filename: pool/main/d/dusk-archive-keyring/dusk-archive-keyring_2026.11.07+26.04_all.deb
+Size: 12736
+SHA256: 4d5778fc22046b12bacb58b437d7e798bc9561ecd387c3b5962a926d13a595ef
+SHA1: 0f9f5ce5c3f97b4b6088537d97edaa1abff00eba
+MD5sum: 44be0a052c30e68f7882ad7cc465512f
+Description: GnuPG key and apt source for the Dusk package repository
+ Installs the public key that signs the Dusk apt repository and an apt
+ source that trusts that key for the Dusk repository only.
+
+Package: dusk-cast
+Version: 1.0+dusk20261108203427~26.04
+Architecture: amd64
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 8864
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: gnome-shell (>= 50), gstreamer1.0-pipewire, libc6 (>= 2.39), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.32.0), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.14.0)
+Recommends: gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-libav, pulseaudio-utils
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-cast/dusk-cast_1.0+dusk20261108203427~26.04_amd64.deb
+Size: 2605580
+SHA256: f6c45620d8ddecd8631b570bc3439c075b7812f612c6133dcec93e6ba40cb1d6
+SHA1: 77aa196db167dd5c2b7d3c667b238ddba02b034a
+MD5sum: c4097922a7d1d026dc40ed740b8b886d
+Description: Dusk Cast, casting to Chromecast and Miracast screens
+ Dusk Cast casts the screen, a window or a file from GNOME Shell to Chromecast
+ (Google Cast) and Miracast receivers. It is Dusk's fork of GNOME Shell Cast:
+ a Shell extension with a quick-settings toggle, and a daemon the session bus
+ starts on demand.
+
+Package: dusk-cursors
+Version: 1.0+dusk20261108110922~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 6472
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-cursors/dusk-cursors_1.0+dusk20261108110922~26.04_all.deb
+Size: 271532
+SHA256: b13182f1cefd002ce7002ccd3c257e65edc82af0646ee0cd42dfbde96c80a443
+SHA1: b4b98f932e69f0b73f5be8b36e20c26400107ea0
+MD5sum: 3033ca77753065004a3a3bf0b4b08900
+Description: Dusk Cursors, the Dusk desktop's cursor theme
+ Dusk's own cursors: a dark arrow with a tail and a light outline, every
+ corner rounded, in sizes 24 to 96, with the Dusk spinner (twelve ticks, an
+ accent head sweeping round, a sunset in the hub) as the busy and working
+ cursors. Names GNOME, GTK, Qt and X use are all covered; anything else falls
+ back to Adwaita.
+
+Package: dusk-defaults
+Version: 1.0+dusk20261109061819~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 36928
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: dconf-cli, libglib2.0-bin, python3, python3-gi, gir1.2-glib-2.0, dusk-theme, dusk-strata, dusk-fonts, dusk-cursors
+Recommends: dusk-session, dusk-shell, dusk-extensions, dusk-gdm, libnotify-bin
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-defaults/dusk-defaults_1.0+dusk20261109061819~26.04_all.deb
+Size: 35665348
+SHA256: 613b08c6d701ed9c01510c292de5896b66116fce97e0fcdd36b73b03041da5e6
+SHA1: c2c70353c8a18c3b9edbd4def6f31808208dec36
+MD5sum: e828225efce4a1f7a86bb5140f6d7a9f
+Description: Dusk desktop defaults, helpers and wallpapers
+ The settings the Dusk desktop starts with, as system dconf defaults (theme,
+ Strata icons, Open Runde font, wallpaper, dock, extensions and their
+ settings), and the per-user helpers that apply them at login: dusk-adopt
+ (backs up the account's settings once, then applies Dusk), dusk-accent
+ (follows the accent colour chosen in Settings) and dusk-wallpaper (builds
+ Strata icons and the wallpaper accent). Also the Dusk wallpapers and account
+ pictures, Dusk's Ptyxis palette and its Firefox and Chrome themes.
+
+Package: dusk-extensions
+Version: 1.0+dusk20261108203427~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 8408
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: gnome-shell (>= 50), gjs
+Recommends: dusk-shell
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-extensions/dusk-extensions_1.0+dusk20261108203427~26.04_all.deb
+Size: 868836
+SHA256: 8da373a9d6e4735c64bd716863ec72a1058722f22766f7cc825d76572d7426b6
+SHA1: 3c2e5c735b93540c2cca515f07fd28ad8cd39dc2
+MD5sum: 0241360afbdedcc2d7f118eb62f82546
+Description: GNOME Shell extensions the Dusk session loads
+ The extensions Dusk's session mode loads besides Dusk Shell, at the versions
+ Dusk is tested with: Blur my Shell, rounded-window-corners, Orbit global menu
+ and Desktop Icons NG (gtk4-ding), the last two patched for Dusk Shell's
+ blurred menus, and Dusk's lock screen extension. Nothing auto-updates them; a
+ newer Dusk build brings newer pins.
+
+Package: dusk-fonts
+Version: 1.0.1+dusk20261107170628~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 1292
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Provides: fonts-open-runde
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-fonts/dusk-fonts_1.0.1+dusk20261107170628~26.04_all.deb
+Size: 544176
+SHA256: addc35e3f1aeeb609ba6d73660242a5c35aca7bdd410bb28cee14a4bf5a7db02
+SHA1: e43fec2da82fdb07d97e9a731dfd24d5f535aebc
+MD5sum: 15f06eee525223e7add71c4c0415d0f8
+Description: Open Runde, the Dusk desktop's interface font
+ Open Runde is a rounded variant of Inter by Laurids Kern, in four weights
+ (Regular, Medium, Semibold, Bold). Dusk uses it for the interface, the login
+ screen and the boot splash.
+
+Package: dusk-gdm
+Version: 1.0+dusk20261109061801~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 36768
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: gdm3, dusk-fonts, dusk-strata, dusk-cursors
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-gdm/dusk-gdm_1.0+dusk20261109061801~26.04_all.deb
+Size: 422496
+SHA256: d6936a2a529762b5be4aee214ef768b5371d4fcbc9417681401db35abdbe74ee
+SHA1: d1131a1108d2dd796d0de2c9413405cada593715
+MD5sum: 1b351d4012162ee2704429c3dab48e49
+Description: Dusk login screen theme
+ The Dusk login screen: GDM's GNOME Shell theme in every Dusk style and accent
+ (Dusk blue is the default; pick another with update-alternatives --config
+ gdm-theme.gresource) over the blurred Dusk wallpaper, with GDM set to the
+ Open Runde font, Strata icons and the dark scheme.
+
+Package: dusk-gradia
+Version: 1.13.0+dusk20261108203427~26.04
+Architecture: amd64
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 2424
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: libc6 (>= 2.2.5), python3, python3-gi, python3-gi-cairo, gir1.2-gtk-4.0, gir1.2-adw-1, gir1.2-gtksource-5, gir1.2-soup-3.0, gir1.2-xdp-1.0, python3-pil
+Recommends: tesseract-ocr, python3-pytesseract
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-gradia/dusk-gradia_1.13.0+dusk20261108203427~26.04_amd64.deb
+Size: 809152
+SHA256: b25009100634cac0bd1f04a142b6a0cd5c7dea9e20a6bc72574517dbdd955061
+SHA1: cd2adee2919e1fa17ae337932d31529a5a2f4be8
+MD5sum: dc3fc6998b63bd8e3d77a1f8494081cc
+Description: Dusk's screenshot annotator (a fork of Gradia)
+ Dusk Gradia annotates screenshots and images: arrows, text, shapes,
+ highlights, censoring, crop, backgrounds and OCR. It is a fork of Gradia
+ 1.13.0 styled for the Dusk desktop, with its own app ID
+ (io.github.phlthydelphya.DuskGradia).
+
+Package: dusk-loupe
+Version: 50.0+dusk20261107113323~26.04
+Architecture: amd64
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 7924
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.39), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.74.0), libgraphene-1.0-0 (>= 1.9.4), libgtk-4-1 (>= 4.15.4), libgweather-4-0t64 (>= 3.16.1), liblcms2-2 (>= 2.2+git20110628), libseccomp2 (>= 2.1.0), glycin-loaders, bubblewrap
+Recommends: dusk-gradia
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-loupe/dusk-loupe_50.0+dusk20261107113323~26.04_amd64.deb
+Size: 2060088
+SHA256: 8c733086faf63b6e0124e1c09a4835d0bceb54c487fc6c69121db975117ba97f
+SHA1: 526574365656c376d680d6c26c1f0128cf101bc7
+MD5sum: d203b5e5d320214c572397d6696ac34f
+Description: Dusk's image viewer (a fork of GNOME Loupe)
+ Dusk Loupe is Dusk's image viewer, a fork of GNOME's Image Viewer (Loupe)
+ 50.0 styled for the Dusk desktop: the image sits on Dusk's content card with
+ rounded corners, the properties pane on the window frame. Its Annotate button
+ opens the image in Dusk Gradia. It has its own app ID
+ (io.github.phlthydelphya.DuskLoupe), confined by AppArmor like Ubuntu's
+ loupe, and is the Dusk session's default image viewer.
+
+Package: dusk-mailhub
+Version: 51.0+dusk20261106040110~26.04
+Architecture: amd64
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 15068
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: libadwaita-1-0 (>= 1.7~alpha), libc6 (>= 2.38), libcairo2 (>= 1.2.4), libecal-2.0-3 (>= 3.17), libedataserver-1.2-27t64 (>= 3.45.2), libenchant-2-2 (>= 2.2.3), libfolks26 (>= 0.11.1), libgck-2-2 (>= 2.91.1), libgcr-4-4 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.23.0), libgee-0.8-2 (>= 0.20.0), libglib2.0-0t64 (>= 2.80.0), libgmime-3.0-0t64 (>= 3.0.5), libgoa-1.0-0b (>= 3.5.90), libgraphene-1.0-0 (>= 1.5.4), libgstreamer-plugins-extra1.0-0 (>= 1.27.2), libgstreamer1.0-0 (>= 1.0.0), libgtk-4-1 (>= 4.13.8), libical3t64 (>= 3.0.0), libicu78 (>= 78.1-1~), libjavascriptcoregtk-6.0-1, libjson-glib-1.0-0 (>= 1.5.2), libmessaging-menu0 (>= 0.6.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpeas-2-0 (>= 1.99.0), libsecret-1-0 (>= 0.7), libsoup-3.0-0 (>= 3.3.1), libsqlite3-0 (>= 3.20.0), libstemmer0d (>= 0+svn527), libunwind8, libwebkitgtk-6.0-4 (>= 2.39.91), libxml2-16 (>= 2.14.1), libytnef0, glib-networking, gnome-keyring | org.freedesktop.secrets, dconf-gsettings-backend | gsettings-backend
+Recommends: gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gnome-online-accounts
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-mailhub/dusk-mailhub_51.0+dusk20261106040110~26.04_amd64.deb
+Size: 2846248
+SHA256: 0fe10370f49622e05b72d7c9c7c0363e5b756b128bf7a8807a2ed066143f4294
+SHA1: 42324007162120c72fc55ecf21d253aee4275b57
+MD5sum: a198ea5c06a9b8a933c49530dd83a057
+Description: Dusk's mail client (a fork of Convey)
+ Mail Hub is Dusk's email client, built around conversations. It is a fork of
+ Convey 51.0, the GTK4 and libadwaita fork of Geary, styled for the Dusk
+ desktop: a slim folder rail, a unified inbox first, row actions on hover,
+ fewer header buttons and a quiet reader. It reads IMAP, SMTP and Microsoft
+ accounts. Its own app ID (io.github.phlthydelphya.MailHub) and launcher
+ (mail-hub), so Geary or a Flathub Convey can still be installed beside it.
+
+Package: dusk-plymouth
+Version: 1.0+dusk20261107113323~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 512
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: plymouth, plymouth-theme-spinner
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-plymouth/dusk-plymouth_1.0+dusk20261107113323~26.04_all.deb
+Size: 317584
+SHA256: 5541eee9fd63239b10e301605cf6e51d92031b819784b136f711f0a0e4475e88
+SHA1: 46925ec6a8534ed02801350eeb83af79b17c6e05
+MD5sum: b8ce616bae7ce2ea4dea3ee4a56eb147
+Description: Dusk boot splash and disk-unlock prompt (Plymouth)
+ The Dusk boot splash: the Dusk sunset mark and wordmark over Dusk's dark
+ frame, an accent spinner, and the disk-unlock (LUKS) prompt as a Dusk pill
+ entry. Built on Plymouth's two-step engine. Installing it makes it the
+ default Plymouth theme and rebuilds the initramfs; removing it hands the
+ default back.
+
+Package: dusk-qt-decoration
+Version: 1.0+dusk20261108203427~26.04
+Architecture: amd64
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 224
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libqt6core6t64 (>= 6.10.2), libqt6dbus6 (>= 6.4.0), libqt6gui6 (>= 6.9.1), libqt6waylandclient6 (>= 6.10.2), libstdc++6 (>= 5), qt6-base-private-abi (= 6.10.2), libqt6waylandclient6 (= 6.10.2+dfsg-7)
+Recommends: dusk-theme
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-qt-decoration/dusk-qt-decoration_1.0+dusk20261108203427~26.04_amd64.deb
+Size: 56140
+SHA256: 1819439fd6568adb6affb8a1ca455fc90a0a4e26af6286d29fe28a174d29ff1e
+SHA1: 540c60a76e263aabd0663435854601bed181c8cb
+MD5sum: 990dbf5555e55b3fefb87a155904dbad
+Description: Dusk window bars for Qt 6 apps
+ The dusk Qt Wayland window decoration: the title bar and window buttons Qt 6
+ apps draw for themselves on GNOME, in Dusk's look (the window frame colour,
+ the title in the interface font, round buttons that light up as Strata slabs
+ in the accent). Its colours follow the Dusk accent or wallpaper live
+ (~/.local/share/dusk/qt-decoration.conf, written by dusk-accent). Built
+ against Qt's private API, so it is tied to one Qt build; it sets
+ QT_WAYLAND_DECORATION=dusk for the session.
+
+Package: dusk-session
+Version: 1.0+dusk20261109061819~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 80
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: gnome-shell (>= 50), gnome-session, gnome-shell-ubuntu-extensions, dusk-shell, dusk-theme
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-session/dusk-session_1.0+dusk20261109061819~26.04_all.deb
+Size: 3104
+SHA256: a176801f4f6a0d4913b98b5a2ca956c140669afc471623403d286d3b8a17cae6
+SHA1: 99f2e09f88932d07d20f0c61ac52b38c2adf6617
+MD5sum: cf54571948e958543ed8748ae2d7ab81
+Description: Dusk desktop session, the login screen's default
+ The Dusk session on the login screen: Ubuntu's GNOME session with GNOME Shell
+ in Dusk's own mode, which loads Dusk Shell and Dusk's extensions with the
+ session. Installing it makes Dusk the session GDM starts for every user who
+ has not chosen one (GDM's FallbackSession, unless the admin set one);
+ removing it hands that back. The Ubuntu session stays available.
+
+Package: dusk-shell
+Version: 1.0+dusk20261109061801~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 2108
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: gnome-shell (>= 50)
+Recommends: dusk-theme, python3, resources
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-shell/dusk-shell_1.0+dusk20261109061801~26.04_all.deb
+Size: 170828
+SHA256: 6c6e6389fb0dedd4c0e15e09623e16108845895b23ab1a3a495a9e3707cf1c26
+SHA1: 7cc384d5bf29d9d0c59ab4b54b292e2ed2002fb3
+MD5sum: 3d5b576aab75f4304d962ebfec5d9540
+Description: Dusk Shell, the Dusk desktop's GNOME Shell extension
+ Dusk Shell is the companion extension for the Dusk desktop: the start button
+ and app menu, the top-bar search, clipboard history with emoji, GIFs, kaomoji
+ and symbols, the notification drawer and dot, the top-bar and quick-settings
+ arrangers, the desktop menu, Strata's notification badges, and the stylesheet
+ for every Dusk accent and style.
+
+Package: dusk-showtime
+Version: 50.0+dusk20261104080620~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 1260
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: python3 (>= 3.12), python3-gi, gir1.2-gtk-4.0 (>= 4.18), gir1.2-adw-1 (>= 1.8), gir1.2-gstreamer-1.0, gir1.2-gst-plugins-base-1.0, gir1.2-gst-plugins-extra-1.0, gstreamer1.0-gtk4, gstreamer1.0-gl, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, dconf-gsettings-backend | gsettings-backend
+Recommends: gstreamer1.0-libav, gstreamer1.0-plugins-extra, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, mesa-va-drivers, gstreamer1.0-packagekit, gstreamer1.0-pipewire, v4l2loopback-dkms
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-showtime/dusk-showtime_50.0+dusk20261104080620~26.04_all.deb
+Size: 119924
+SHA256: 3afd8cdfca3a0e10a5d36539f7c9918622f9cfc1235fe16fe2a2703fe62ea513
+SHA1: 9a7645614e2dd221e30512dd30475b36cf5114f3
+MD5sum: d74791e6cb66a4d6bd9829a28b693108
+Description: Dusk's video player (a fork of GNOME Showtime)
+ Dusk Showtime is Dusk's video player, a fork of GNOME's Video Player
+ (Showtime) 50.0: VLC-style playlists (open or drop folders, with subfolders,
+ naturally sorted; queue, shuffle, repeat, a playlist panel), hardware
+ decoding with an offer to install missing codecs, a clean capture mode for
+ OBS window capture (only the video, in a 16:9 frame), and a virtual camera
+ output that OBS and call apps can use (a v4l2loopback device labelled Dusk
+ Showtime; share/dusk-showtime/setup-virtual-camera.sh creates it). Its own
+ app ID (io.github.phlthydelphya.DuskShowtime).
+
+Package: dusk-staq
+Version: 2.6.0+dusk20261109094625~26.04
+Architecture: amd64
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 8924
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libfuse3-4 (>= 3.17.2), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.12.0), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.20.0), libqt6core6t64 (>= 6.10.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.8.2), libqt6network6 (>= 6.4.0), libqt6qml6 (>= 6.10.2), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6webenginequick6 (>= 6.6.0), libqt6widgets6 (>= 6.3.0), libssl3t64 (>= 3.0.0), libstdc++6 (>= 14), qt6-declarative-private-abi (= 6.10.2), qt6-webengine-private-abi (= 6.10.2), qml6-module-qtcore, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-dialogs, qml6-module-qtquick-effects, qml6-module-qtquick-layouts, qml6-module-qtquick-shapes, qml6-module-qtquick-templates, qml6-module-qtwebengine, qt6-svg-plugins, qt6-wayland
+Provides: staq
+Conflicts: staq
+Replaces: staq
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-staq/dusk-staq_2.6.0+dusk20261109094625~26.04_amd64.deb
+Size: 1741524
+SHA256: 127bb2ae5678e5924b49fce1836760f16539a4e5678d9c488eb91120a8a64aa1
+SHA1: db8b4abfbf44db71956c6516e8cae34e4af09a6e
+MD5sum: 8e4acf84ffe8774f9bf98b7de8832128
+Description: Connect your Android phone to this computer
+ Staq connects an Android phone to the desktop over the local network: files,
+ clipboard, SMS, calls and notifications, with no cloud server and no account.
+ Dusk's phone link app, with its GNOME Shell extension for Quick Settings.
+
+Package: dusk-strata
+Version: 0.4.1+dusk20261108064545~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 57008
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: python3, python3-pil
+Recommends: papirus-icon-theme, yaru-theme-icon, librsvg2-bin
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-strata/dusk-strata_0.4.1+dusk20261108064545~26.04_all.deb
+Size: 10924048
+SHA256: 0f72a6809f97e83bc3bcfab083e094fc8e6eb80269b28ff12c4097d417f2681d
+SHA1: 34b82bca158c943ca01ac7185aed52fc1905cb49
+MD5sum: 184d6b5d8d2e9288d8cd9f28421ea3df
+Description: Dusk's icon engine and icon theme (Strata)
+ Strata draws Dusk's icons in the slab style (a pad with visible thickness and
+ a top sheen, an object stacked on it with a soft shadow) and recolors them
+ from a seed: the wallpaper, or the chosen accent. This package holds the
+ engine (Python module strata), which each account's dusk-wallpaper uses to
+ build its own icons, the default Strata icon theme, and the glyph sources for
+ apps Strata does not draw: the MoreWaita icon theme and Simple Icons' brand
+ logos.
+
+Package: dusk-theme
+Version: 1.0+dusk20261109065728~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 80280
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: sassc, python3, python3-gi, python3-pil, evolution-data-server, gir1.2-ecal-2.0, qt6-style-kvantum, qt-style-kvantum
+Recommends: dusk-strata, tesseract-ocr
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-theme/dusk-theme_1.0+dusk20261109065728~26.04_all.deb
+Size: 1097424
+SHA256: 33465836f265704e7f3c80a2d3b0aa69987f708e8b3d2cb577d2a3a4d6432574
+SHA1: aa8c73c9ba3cc13ac9de7f8cbbfaffc616c68421
+MD5sum: 2a7ad48d3c6fb22a76c9db3b718b41ac
+Description: Dusk desktop theme: GTK, GNOME Shell and Kvantum (Qt)
+ The Dusk GTK 3, GTK 4 / libadwaita, GNOME Shell and Kvantum (Qt Widgets apps)
+ themes in every style (Dusk, Atomic Suede) and accent (Dusk, Dusk-<Name>,
+ Dusk-Atomic, Dusk-Atomic-<Name>), the sources each account's dusk-wallpaper
+ builds its wallpaper-seeded theme from, an AppArmor rule that lets confined
+ GTK4 apps read the Dusk stylesheet, and the session setting that gives Qt
+ Widgets apps the Kvantum style.
+
+Package: dusk-theme-unifier
+Version: 0.1.13+dusk20261108005241~26.04
+Architecture: all
+Maintainer: phlthydelphya <291215135+phlthydelphya@users.noreply.github.com>
+Installed-Size: 1596
+Homepage: https://github.com/phlthydelphya/dusk-theme
+Depends: python3 (>= 3.10), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, libglib2.0-bin, sassc
+Recommends: dbus-daemon, flatpak, gnome-shell-extensions, qt5ct, qt6ct
+Provides: theme-unifier (= 0.1.13+dusk20261108005241)
+Conflicts: theme-unifier
+Replaces: theme-unifier
+Priority: optional
+Section: gnome
+Filename: pool/main/d/dusk-theme-unifier/dusk-theme-unifier_0.1.13+dusk20261108005241~26.04_all.deb
+Size: 160212
+SHA256: 45de115ed02b601b64fb35643649a78adfb9f5213e18d2ffbec1bbefac8893bd
+SHA1: ae8dc5a628fb751959850bc6cb5c552544937a68
+MD5sum: 8d8ad17c66abadffc10020b457efba68
+Description: Theme Unifier: one GTK theme's colors across apps and the Shell
+ Theme Unifier reads the colors of an installed GTK3 theme and applies them,
+ with one Apply, to libadwaita apps, plain GTK4 apps, Flatpak apps, the GNOME
+ Shell (through the User Themes extension) and KDE/Qt apps (through qt5ct and
+ qt6ct). For libadwaita it can use the theme's own GTK4 styles; other
+ integrations carry colors where full styles are unavailable. Every change is
+ listed before it is made, and revert undoes exactly what was applied. A
+ per-user watcher follows light/dark and high contrast. The Dusk build of the
+ theme-unifier package: the theme-unifier command and its GTK4/libadwaita
+ window.
+
+Package: libyara-x-capi1
+Source: yara-x
+Version: 1.22.0-0shd1
+Architecture: amd64
+Maintainer: Security Hub Defender Maintainers <security-hub-defender@users.noreply.github.com>
+Installed-Size: 24812
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Multi-Arch: same
+Homepage: https://virustotal.github.io/yara-x/
+Priority: optional
+Section: libs
+Filename: pool/main/y/yara-x/libyara-x-capi1_1.22.0-0shd1_amd64.deb
+Size: 6419426
+SHA256: 4d5ae387e5090e28f8c0179b5aebef220dba3b5c768aff707124bdaadc9b1eae
+SHA1: c3b46e5414cea496e8fbc66b036d82009f728b9d
+MD5sum: 135801aea9c52ff8275969a8093c2e1a
+Description: YARA-X pattern matching library (C API, shared library)
+ YARA-X is a rewrite of YARA in Rust. This package carries the shared
+ library of its C API, used by Security Hub Defender to scan files and
+ process memory against YARA rules.
+
+Package: security-hub
+Version: 0.5.7
+Architecture: all
+Maintainer: phlthydelphya <phlthydelphya@users.noreply.github.com>
+Installed-Size: 806
+Depends: init-system-helpers (>= 1.52), python3:any, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.5), gir1.2-glib-2.0, gir1.2-nm-1.0, network-manager, iproute2
+Recommends: security-hub-firewall-mechanism (= 0.5.7), shdefender (>= 0.1.2), ufw, update-manager, gir1.2-packagekitglib-1.0, packagekit, network-manager-openvpn-gnome, gir1.2-gudev-1.0, udisks2
+Suggests: clamav-daemon, clamav-freshclam, python3-nautilus, apfs-dkms
+Conflicts: security-center
+Replaces: security-center
+Provides: security-center
+Priority: optional
+Section: gnome
+Filename: pool/main/s/security-hub/security-hub_0.5.7_all.deb
+Size: 175342
+SHA256: d38fc78f848b5d528f2900f6b909a17b088946cf8c1147f679159c7a2117d6df
+SHA1: 439a1418246e0d3bdd3dd3f7ac1c01cbaf85e458
+MD5sum: 7f21ff43ea6a5017fa3fa8af7f7371f5
+Description: GNOME dashboard for network and device security status
+ Shows NetworkManager connection and VPN state, UFW, AppArmor, Secure Boot,
+ root filesystem encryption and the locally cached update summary. Reports
+ unknown states explicitly instead of guessing.
+ .
+ UFW enable/disable buttons work only when security-hub-firewall-mechanism
+ is installed.
+ .
+ The Devices page (and a Drive menu in Files) unlocks BitLocker, VeraCrypt and
+ LUKS USB drives, opens Mac (APFS) drives, formats, encrypts and ejects.
+
+Package: security-hub-firewall-mechanism
+Source: security-hub
+Version: 0.5.7
+Architecture: all
+Maintainer: phlthydelphya <phlthydelphya@users.noreply.github.com>
+Installed-Size: 175
+Depends: python3:any, python3-gi, gir1.2-glib-2.0, ufw, nftables, polkitd | policykit-1, dbus, systemd
+Recommends: udisks2, pkexec | policykit-1, cryptsetup-bin, acl, exfatprogs, ntfs-3g, dosfstools
+Conflicts: security-center-firewall-mechanism
+Replaces: security-center-firewall-mechanism
+Provides: security-center-firewall-mechanism
+Priority: optional
+Section: gnome
+Filename: pool/main/s/security-hub/security-hub-firewall-mechanism_0.5.7_all.deb
+Size: 38880
+SHA256: 88719b63456b6e52e3b15febbb0137f2c01e04667a23816bba56a00c6eb81cbf
+SHA1: 3c40a038eafcfbf6dd75cc0a9ddeb86ad6c91e19
+MD5sum: 7aca5565a3edb36542c638774c56eb4f
+Description: Root D-Bus mechanism for Security Hub UFW controls
+ Narrow system service exposing GetStatus and SetEnabled on the system bus,
+ guarded by polkit admin authentication. Blocks further changes after an
+ unknown outcome until an administrator clears the marker file under
+ /run/security-hub and restarts the service.
+ .
+ Also ships the drive helpers started through pkexec (encrypt a USB drive
+ with VeraCrypt, change a VeraCrypt password, open an encrypted Mac drive),
+ their polkit actions, and udisks settings that turn on VeraCrypt detection
+ and open Mac drives read-only.
+
+Package: shdefender
+Version: 0.1.2
+Architecture: amd64
+Maintainer: Security Hub Defender Maintainers <security-hub-defender@users.noreply.github.com>
+Installed-Size: 55253
+Depends: libc6 (>= 2.34), libyara-x-capi1 (>= 1.22.0), init-system-helpers (>= 1.52), adduser, apparmor, clamav-daemon, clamav-freshclam, dbus
+Recommends: tetragon (>= 1.7.1), fangfrisch, libnotify-bin
+Suggests: fapolicyd
+Homepage: https://github.com/phlthydelphya/shdefender
+Priority: optional
+Section: admin
+Filename: pool/main/s/shdefender/shdefender_0.1.2_amd64.deb
+Size: 17390928
+SHA256: 29f0d7321a65d4a187d2dac179be421b1e0e8187e48ab1fb893165b655d55e62
+SHA1: edab00e4ec58d9537252fa542ba5e1427b63ebc0
+MD5sum: d2a3f312d4e29b3e56a335d36315d282
+Description: endpoint protection agent (real-time anti-malware and lightweight EDR)
+ Security Hub Defender combines ClamAV, YARA-X, package integrity checks and
+ Tetragon behavioral detection behind one daemon with a single scoring engine
+ and response tiers (log, alert, quarantine, kill). It is built for
+ Ubuntu-based distributions and selects a hardware profile (full, lite, thin)
+ at install time.
+ .
+ This package provides shdefenderd (the daemon), shdefenderctl (the CLI), the
+ systemd unit, AppArmor profile and default configuration.
+

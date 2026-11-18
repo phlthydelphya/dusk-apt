@@ -1,0 +1,7 @@
+Archive: resolute
+Version: 26.04
+Component: main
+Origin: Dusk
+Label: Dusk
+Architecture: amd64
+Description: Dusk packages for DuskOS
